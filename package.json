@@ -4,7 +4,8 @@
   "description": "A Node.js starter for Serverless Framework with ES6 and TypeScript support",
   "main": "handler.js",
   "scripts": {
-    "test": "serverless-bundle test"
+    "test": "jest",
+    "type": "module"
   },
   "author": "",
   "license": "MIT",
@@ -13,12 +14,22 @@
     "url": "https://github.com/AnomalyInnovations/serverless-nodejs-starter.git"
   },
   "devDependencies": {
-    "aws-sdk": "^2.719.0",
-    "serverless-bundle": "^2.0.0",
-    "serverless-dotenv-plugin": "^2.1.1",
-    "serverless-offline": "^5.3.3"
+    "@babel/cli": "7.2.3",
+    "@babel/core": "7.4.0",
+    "@babel/node": "7.2.2",
+    "@babel/plugin-transform-runtime": "7.4.0",
+    "@babel/preset-env": "^7.10.4",
+    "aws-sdk": "2.719.0",
+    "babel-jest": "26.1.0",
+    "jest": "26.1.0",
+    "serverless-bundle": "2.0.0",
+    "serverless-dotenv-plugin": "2.1.1",
+    "serverless-offline": "5.3.3",
+    "webpack": "4.2.0",
+    "webpack-node-externals": "1.6.0"
   },
   "dependencies": {
+    "babel-loader": "^8.1.0",
     "stripe": "^8.79.0",
     "uuid": "^7.0.3"
   }
