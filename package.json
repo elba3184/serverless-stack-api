@@ -24,7 +24,7 @@
     "jest": "26.1.0",
     "serverless-bundle": "2.0.0",
     "serverless-dotenv-plugin": "2.1.1",
-    "serverless-offline": "5.3.3",
+    "serverless-offline": "12.0.3",
     "webpack": "4.2.0",
     "webpack-node-externals": "1.6.0"
   },
